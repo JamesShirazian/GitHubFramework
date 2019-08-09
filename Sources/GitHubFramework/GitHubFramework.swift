@@ -8,11 +8,13 @@
 
 import Foundation
 
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 protocol GitHubFrameworkDelegate {
     func GitHubErrorOccured(error: Error)
 }
 
-class GitHubFramework: NSObject {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public class GitHubFramework: NSObject {
     
     /// GitHub username
     private var username: String!
