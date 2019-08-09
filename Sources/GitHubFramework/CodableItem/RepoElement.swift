@@ -11,47 +11,47 @@ import Foundation
 // MARK: - RepoElement
 
 public struct RepoElement: Codable {
-    let id: Int
-    let nodeID, name, fullName: String
-    let repoPrivate: Bool
-    let owner: Owner
-    let htmlURL: String
-    let repoDescription: String?
-    let fork: Bool
-    let url, forksURL: String
-    let keysURL, collaboratorsURL: String
-    let teamsURL, hooksURL: String
-    let issueEventsURL: String
-    let eventsURL: String
-    let assigneesURL, branchesURL: String
-    let tagsURL: String
-    let blobsURL, gitTagsURL, gitRefsURL, treesURL: String
-    let statusesURL: String
-    let languagesURL, stargazersURL, contributorsURL, subscribersURL: String
-    let subscriptionURL: String
-    let commitsURL, gitCommitsURL, commentsURL, issueCommentURL: String
-    let contentsURL, compareURL: String
-    let mergesURL: String
-    let archiveURL: String
-    let downloadsURL: String
-    let issuesURL, pullsURL, milestonesURL, notificationsURL: String
-    let labelsURL, releasesURL: String
-    let deploymentsURL: String
-    let gitURL, sshURL: String
-    let cloneURL: String
-    let svnURL: String
-    let homepage: JSONNull?
-    let size, stargazersCount, watchersCount: Int
-    let language: String
-    let hasIssues, hasProjects, hasDownloads, hasWiki: Bool
-    let hasPages: Bool
-    let forksCount: Int
-    let mirrorURL: JSONNull?
-    let archived, disabled: Bool
-    let openIssuesCount: Int
-    let license: JSONNull?
-    let forks, openIssues, watchers: Int
-    let defaultBranch: String
+    public let id: Int
+    public let nodeID, name, fullName: String
+    public let repoPrivate: Bool
+    public let owner: Owner
+    public let htmlURL: String
+    public let repoDescription: String?
+    public let fork: Bool
+    public let url, forksURL: String
+    public let keysURL, collaboratorsURL: String
+    public let teamsURL, hooksURL: String
+    public let issueEventsURL: String
+    public let eventsURL: String
+    public let assigneesURL, branchesURL: String
+    public let tagsURL: String
+    public let blobsURL, gitTagsURL, gitRefsURL, treesURL: String
+    public let statusesURL: String
+    public let languagesURL, stargazersURL, contributorsURL, subscribersURL: String
+    public let subscriptionURL: String
+    public let commitsURL, gitCommitsURL, commentsURL, issueCommentURL: String
+    public let contentsURL, compareURL: String
+    public let mergesURL: String
+    public let archiveURL: String
+    public let downloadsURL: String
+    public let issuesURL, pullsURL, milestonesURL, notificationsURL: String
+    public let labelsURL, releasesURL: String
+    public let deploymentsURL: String
+    public let gitURL, sshURL: String
+    public let cloneURL: String
+    public let svnURL: String
+    public let homepage: JSONNull?
+    public let size, stargazersCount, watchersCount: Int
+    public let language: String
+    public let hasIssues, hasProjects, hasDownloads, hasWiki: Bool
+    public let hasPages: Bool
+    public let forksCount: Int
+    public let mirrorURL: JSONNull?
+    public let archived, disabled: Bool
+    public let openIssuesCount: Int
+    public let license: JSONNull?
+    public let forks, openIssues, watchers: Int
+    public let defaultBranch: String
 
     enum CodingKeys: String, CodingKey {
         case id
