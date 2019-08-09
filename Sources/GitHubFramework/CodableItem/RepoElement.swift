@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - RepoElement
 
-struct RepoElement: Codable {
+public struct RepoElement: Codable {
     let id: Int
     let nodeID, name, fullName: String
     let repoPrivate: Bool
@@ -125,7 +125,7 @@ struct RepoElement: Codable {
 
 // MARK: - Owner
 
-struct Owner: Codable {
+public struct Owner: Codable {
     let login: String
     let id: Int
     let nodeID: String
@@ -160,11 +160,11 @@ struct Owner: Codable {
     }
 }
 
-typealias Repo = [RepoElement]
+public typealias Repo = [RepoElement]
 
 // MARK: - Encode/decode helpers
 
-class JSONNull: Codable, Hashable {
+public class JSONNull: Codable, Hashable {
     public static func == (_: JSONNull, _: JSONNull) -> Bool {
         return true
     }

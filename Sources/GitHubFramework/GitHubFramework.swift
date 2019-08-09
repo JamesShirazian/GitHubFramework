@@ -9,8 +9,8 @@
 import Foundation
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-protocol GitHubFrameworkDelegate {
-    func GitHubErrorOccured(error: Error)
+public protocol GitHubFrameworkDelegate {
+     func GitHubErrorOccured(error: Error)
 }
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
