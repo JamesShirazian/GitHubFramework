@@ -21,7 +21,7 @@ public class GitHubFramework: NSObject {
 
     
     /// GitHub Delegate
-    var delegate: GitHubFrameworkDelegate!
+    public var delegate: GitHubFrameworkDelegate!
 
     /// <#Description#>
     /// - Parameter username: <#username description#>
@@ -34,7 +34,7 @@ public class GitHubFramework: NSObject {
     /// <#Description#>
     /// - Parameter numberOfPages: <#numberOfPages description#>
     /// - Parameter completion: <#completion description#>
-    func listRepository(searchTerm: String? = nil, numberOfPages: Int? = 100, completion: @escaping (_ repos: [RepoElement]) -> Void) {
+    public func listRepository(searchTerm: String? = nil, numberOfPages: Int? = 100, completion: @escaping (_ repos: [RepoElement]) -> Void) {
         let endpoint = "https://api.github.com/users/\(username ?? "")/repos?per_page=\(String(describing: numberOfPages))"
         fetchResult(url: endpoint, method: "POST") { data, err in
             if err == nil {
