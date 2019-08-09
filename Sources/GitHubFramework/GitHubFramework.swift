@@ -19,7 +19,7 @@ class GitHubFramework: NSObject {
 
     
     /// GitHub Delegate
-    private var delegate: GitHubFrameworkDelegate!
+    var delegate: GitHubFrameworkDelegate!
 
     /// <#Description#>
     /// - Parameter username: <#username description#>
