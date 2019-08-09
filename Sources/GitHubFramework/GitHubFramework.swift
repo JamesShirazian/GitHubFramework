@@ -25,7 +25,7 @@ public class GitHubFramework: NSObject {
 
     /// <#Description#>
     /// - Parameter username: <#username description#>
-    init(username: String) {
+    public init(username: String) {
         super.init()
         self.username = username
     }
